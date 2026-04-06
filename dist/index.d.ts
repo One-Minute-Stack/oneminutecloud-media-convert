@@ -18,10 +18,9 @@ declare class Media {
     }): Promise<{
         trackingId: string;
     }>;
-    static verifyWebhook({ apiKey, headers, rawBody, body, }: {
+    static verifyWebhook({ apiKey, headers, body, }: {
         apiKey: string;
         headers: Record<string, any>;
-        rawBody: string;
         body: any;
     }): Promise<{
         valid: boolean;
