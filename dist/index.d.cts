@@ -25,6 +25,15 @@ declare class Media {
     }): Promise<{
         valid: boolean;
     }>;
+    static getMetadata({ apiKey, trackingId, }: {
+        apiKey: string;
+        trackingId: string;
+    }): Promise<{
+        video_id: string;
+        fileCount: number;
+        totalSizeBytes: number;
+        resolution: string[];
+    }>;
 }
 declare const media: typeof Media;
 
