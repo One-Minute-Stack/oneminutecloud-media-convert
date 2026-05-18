@@ -1,6 +1,6 @@
 type Watermark = {
-    keyname: string;
-    position: "top-left" | "top-right" | "bottom-left" | "bottom-right" | "center";
+    filename: string;
+    position?: "top-left" | "top-right" | "bottom-left" | "bottom-right" | "center";
     opacity?: number;
     size?: string;
 };
