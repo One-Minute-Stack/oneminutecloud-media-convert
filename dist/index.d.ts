@@ -34,6 +34,10 @@ declare class Media {
         totalSizeBytes: number;
         resolution: string[];
     }>;
+    static stream({ apiKey, trackingId, }: {
+        apiKey: string;
+        trackingId: string;
+    }): Promise<any>;
 }
 declare const media: typeof Media;
 
